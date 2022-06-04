@@ -178,9 +178,11 @@ bindcode 67 exec amixer set Master 1+ toggle
 # Mouse controller
 focus_follows_mouse no
 
-# Screen brightness
+
+# Screens
 #bindcode 233 exec "/usr/sbin/brightness +10000"
 #bindcode 232 exec "/usr/sbin/brightness -10000"
+bindcode 107 exec xrandr --auto
 
 # Screenshot
 #bindsym $mod+Ctrl+4 exec scrot -s
@@ -192,6 +194,8 @@ mode "$dmenu_launcher" {
      bindsym j exec $HOME/.dotfiles/dmenu/dmjira.sh; mode "default"
      bindsym q exec $HOME/.dotfiles/dmenu/dmlogout.sh; mode "default"
      bindsym s exec $HOME/.dotfiles/dmenu/dmwebsearch.sh; mode "default"
+     bindsym w exec $HOME/.dotfiles/dmenu/dmwifi.sh; mode "default"
+     bindsym t exec $HOME/.dotfiles/scripts/screenshot.sh; mode "default"
      bindsym d exec dmenu_run; mode "default"
 
      bindsym Escape mode "default"
