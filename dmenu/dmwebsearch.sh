@@ -14,6 +14,7 @@ if [[ -z "${DM_WEBSEARCH_ENGINES}" ]]; then
         "google - https://google.com/search?q="
         "googleimages - http://google.com/search?hl=en&tbm=isch&q="
         "github.com - https://github.com/search?q="
+        "github.com/eddyzags - https://github.com/eddyzags?tab=repositories&q="
         "amazon - https://www.amazon.fr/s?k="
         "reddit - https://www.reddit.com/search/?q="
     )
